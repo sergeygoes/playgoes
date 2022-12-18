@@ -59,7 +59,20 @@
 }
 
 #About {
+    display: flex;
+    grid-row: span;
     flex-basis: 100%;
+}
+
+#img-about {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 30%;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    filter: grayscale(0.2) brightness(1.05);
 }
 
 #Etc {
@@ -68,9 +81,10 @@
     flex: 1 1 auto;
     justify-content: space-evenly;
 }
-.etc-title {
-    flex: none;
-    flex-basis: 100%;
+.title {
+    flex-grow: 0;
+    width: 100%;
+    flex-direction: column;    
 }
 
 .section-box
